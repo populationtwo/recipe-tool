@@ -1,0 +1,577 @@
+/********init styles**********************/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+ul
+{
+	-webkit-padding-start:0px;
+	list-style:none;
+}
+
+.recipeToolWrapper
+{
+	width:960px;
+	height:490px;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	position:relative;
+	background:no-repeat url( '../images/recipeTool/recipeToolMainBg.png');
+}
+
+.recipeHolder2
+{
+	width:891px;
+	/*height:344px;*/
+	margin-left:auto;
+	margin-right:auto;
+	top:27px;
+	/*background:no-repeat url( '../images/recipeTool/recipeToolBg.png');*/
+	position:relative;
+}
+
+#loader
+{
+	top:120px;
+	left:380px;
+	position:absolute;
+}
+/******************************************/
+
+/***********thumbnail styles***************/
+
+#recipeListWrapper
+{
+	width:650px;
+	height:46px;
+	margin-top:17px;
+	left:107px;
+	margin-top:17px;
+	position:relative;
+}
+#recipeListInnerWrapper
+{
+	width:644px;
+	height:86px;
+
+	overflow:hidden;
+	position:relative;
+	top: 18px;
+}
+
+#recipeList
+{
+	height:46px;
+	position:absolute;
+}
+
+#recipes-close
+{
+	position:absolute;
+	width:52px;
+	height:28px;
+	top:21px;
+	left:-108px;
+	cursor:pointer;
+}
+#poweredBy
+{
+	top:2px;
+	right:-111px;
+	position:absolute;
+}
+.recipe-thumbs
+{
+	float:left;
+	position:relative;
+    margin:0 4px;
+	height:42px;
+	width:84px;
+    padding:0;
+	cursor:pointer;
+}
+
+.thumbImage
+{
+	border:1px solid #989898;
+    width:80px;
+    height:40px;
+    margin:0px;
+    padding:0;
+}
+
+.thumbSelectedOff
+{
+	width:82px;
+	height:46px;
+	position:absolute;
+	top:0px;
+	visibility:hidden;
+}
+
+.thumbSelectedOn
+{
+	width:82px;
+	height:46px;
+	position:absolute;
+	top:0px;
+	visibility:visible;
+}
+
+#recipe-scroller-prev
+{
+    position:absolute;
+	top:33px;
+	left:76px;
+	display:block;
+	width:14px;
+	height:15px;
+	background: transparent url("../images/recipeTool/left-arrow.jpg") no-repeat 0 0;
+	z-index:0
+	cursor:pointer;
+}
+
+#recipe-scroller-prev:hover
+{
+	background-position: 0 -15px
+}
+
+#recipe-scroller-next
+{
+    position:absolute;
+	top:33px;
+	left:773px;
+	display:block;
+	width:14px;
+	height:15px;
+	background: transparent url("../images/recipeTool/right-arrow.jpg") no-repeat 0 0;
+	z-index:0;
+	cursor:pointer;
+}
+
+#recipe-scroller-next:hover
+{
+	background-position: 0 -15px
+}
+/*********************************************/
+
+/***********recipe category styles************/
+#recipe-category-nav
+{
+	top:23px;
+	right:60px;
+	position:absolute;
+	font-size:17px;
+}
+.inactive span
+{
+	width:140px;
+	text-align:center;
+	top:30%;
+	left:0px;
+	position:absolute;
+}
+.reactive span
+{
+	width:161px;
+	text-align:center;
+	top:30%;
+	left:0px;
+	position:absolute;
+}
+.inactive
+{
+	width:140px;
+	height:53px;
+	margin-bottom:3px;
+	background-image:url( '../images/recipeTool/recipe-category-bkg.png');
+	color:#7f7f7f;
+	cursor:pointer;
+	position:relative;
+}
+.reactive
+{
+	margin-left:-10px;
+	width:151px;
+	height:53px;
+	margin-bottom:3px;
+	background-image:url( '../images/recipeTool/recipe-category-bkg-active.png');
+	color:white;
+	cursor:default;
+	position:relative;
+}
+/*********************************************/
+
+/***************recipe detail styles**********/
+#recipeDetails
+{
+	width:736px;
+	height:300px;
+	margin-top:80px;
+	margin-left:28px;
+	position:relative;
+}
+#recipeDetails h1
+{
+	margin:0;
+	margin-bottom:7px;
+	color:#0063a4;
+	font-size:20px;
+}
+#recipeDetails p
+{
+	margin:0;
+	margin-top:7px;
+	margin-bottom:7px;
+}
+.prep-time-wrap p
+{
+	font-size:14px;
+}
+.recipe-preview
+{
+	width:859px;
+	position:absolute;
+}
+.recipe-details
+{
+	width:736px;
+	position:absolute;
+	visibility:hidden;
+}
+.recipe-shad-divider
+{
+	width:718px;
+	height:11px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.large-image-wrap
+{
+    float:left;
+    margin:-6px 29px 0 -38px;
+    width:315px;
+	height:238px;
+    background: transparent url("../images/recipeTool/recipe-image-bkg.png") no-repeat 0 0;
+}
+
+.large-image-wrap img
+{
+    margin:7px 0 0 7px;
+    width:299px;
+    height:222px;
+}
+.recipe-preview a
+{
+	cursor:pointer;
+}
+a.view-recipe-details
+{
+	font-size:14px;
+	color:#669E2F;
+	float:left;
+	margin-top:13px;
+}
+p.recipe-description
+{
+	font-size:13px;
+	color: #686868;
+}
+.recipe-preview-info
+{
+	float:left;
+	width:506px;
+}
+.shareStuff
+{
+	/*width:276px;*/
+	height:24px;
+	margin-top:12px;
+	margin-bottom:12px;
+	float:right;
+}
+.shareStuffA
+{
+	float:left;
+	width:62px;
+	height:24px;
+	margin-right:10px;
+}
+.pinIt{
+	width:50px;
+}
+.vid{
+	margin-left:-9px;
+}
+
+.recipe-details-title
+{
+position: relative;
+margin:-16px -92px 10px 2px;
+height: 58px
+;/*background: transparent url("../images/recipeTool/line-seperator.jpg") repeat-x left bottom;
+*/}
+.recipe-details-title h1
+{
+    color:#1872a3;
+    font-size:16px;
+}
+a.close-recipe-details
+{
+    position: absolute;
+    font-weight:bold;
+    color:#545454;
+    top:5px;
+    right:0px;
+    font-size:11px;
+    cursor:pointer;
+
+}
+
+ul.ingredientsList{
+	list-style:circle;
+}
+
+.recipe-legal{
+	width:802px;
+	margin-top:10px;
+	font-size:10px;
+	clear:both;
+	color:#898989;
+}
+
+.recipe-details-wrap
+{
+    position: relative;
+    margin:-11px -93px 0 5px;
+    height:200px;
+	overflow:hidden;
+}
+.recipe-details-innerwrap
+{
+    width:397px;
+  	position:relative;
+    float:left;
+    margin-bottom:20px;
+}
+.recipe-details-innerwrap h3
+{
+    color:#669E2F;
+    font-size:13px;
+    padding:0;
+}
+.recipe-details-innerwrap ol, .recipe-details-innerwrap ul
+{
+    padding:0 0 0 15px;
+    margin:0px;
+}
+.recipe-details-innerwrap ol li, .recipe-details-innerwrap ul li
+{
+    padding:10px 10px 0 0;
+    margin:0px;
+    color:#898989;
+}
+/*************************************************************/
+
+
+/*************print styles*****************/
+.printItWrapper{
+	background-color:white;
+	/*display:none;*/
+	position:relative;
+	width:760px;
+	min-height:550px;
+	text-align:left;
+}
+
+.printItWrapper .recipe-preview{
+	position:relative;
+}
+
+.printItWrapper .large-image-wrap
+{
+    float:left;
+    margin:0 41px 0 42px;
+    width:329px;
+    height:212px;
+}
+
+.printItWrapper .large-image-wrap img
+{
+    width:299px;
+    height:195px;
+    border:solid 4 #dddddd;
+}
+
+.printItWrapper h1
+{
+	margin:0;
+	margin-bottom:7px;
+	color:#0063a4;
+	font-size:20px;
+}
+
+.printItWrapper .prep-time-wrap p{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.printItWrapper .recipe-description{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.printItWrapper .recipe-details-wrap2{
+	clear:both;
+	min-height:200px;
+	overflow:visible;
+}
+
+.printItWrapper .recipe-legal{
+	width:802px;
+	font-size:10px;
+	color:#898989;
+}
+
+.printItWrapper .large-image-wrap{
+	margin-bottom:30px;
+}
+
+.printItWrapper .recipe-details-innerwrap{
+	margin-top:20px;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 18px;
+	height: 100%;
+	/*background: #fff;*/
+}
+
+
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+    background:url('../images/recipeTool/track.png') repeat-y 0 0;
+	position: relative;
+}
+
+.jspDrag
+{
+	background:transparent url('../images/recipeTool/trackThumb.jpg') no-repeat 0 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+
+    @media print  {
+
+        #TRM_Header, .pov-container, .countdown-mod, .video-mod, .logo-mod, .recipe-banner, .recipe-mod, #recipeListWrapper, #recipeDetails, .legal, #TRM_Footer  {display:none;}
+        .printable {display:block;}
+        .recipes-container { overflow: visible; font-family: Arial, sans-serif }
+        .recipes-container h3 { font-size: 20px; }
+
+        .recipe-preview {  }
+        .recipe-details-wrap2  { font-size: 16px; color: #000;}
+        p.recipe-description  { font-size: 16px; color: #000;}
+        .recipe-details-innerwrap { float: none; width: auto; }
+        .recipe-details-innerwrap li { color: #000; }
+        .prep-time-wrap { font-size: 18px; }
+        .recipeToolWrapper { background: none; }
+        .printItWrapper .large-image-wrap { width: auto; height: auto; margin-left: 0;}
+
+        .recipe-details-innerwrap ol li { list-style: decimal; }
+        .recipe-details-innerwrap ul li { list-style: circle; }
+        .prep-time-wrap span { display: inline; }
+
+    }

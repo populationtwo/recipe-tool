@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<!-- Scripts-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript' src='/Global/script/swfobject.js'></script>
+<script type='text/javascript' src='/Global/script/jQuery/tdmPlugins/jquery.videoSwitch.js'></script>
+
+<script type='text/javascript'>
+ $(document).ready(function () {
+
+    var qs = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i)
+    {
+        var p=a[i].split('=');
+        if (p.length != 2) continue;
+        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+    })(window.location.search.substr(1).split('&'));
+
+	$(".mivideo2").videoSwitch({
+    videoId: 'C3D_2012',
+    videoWidth: 640,
+    videoHeight:370,
+    autoplay:true,
+    video:qs['vid'],
+    videoPoster:qs['pid'], //for html 5
+    seek:'3.8', // for flash start view
+    track:'C3D_2012',
+    converge:'02_SBU_33094_StarbuckKCup'
+    });
+});
+</script>
+
+</head>
+<body>
+	<div class="mivideo2">
+
+	</div>
+</body>
+</html>
+

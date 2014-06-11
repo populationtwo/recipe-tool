@@ -1,0 +1,105 @@
+/*============================================
+Company: Triad Retail
+Client: Sams Club
+Version: 1.0
+=============================================*/
+@import url("normalize.css");
+@import url("buttons.css");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+
+#preloader { background: #FFF; height: 100%; position: absolute; z-index: 100; width: 100%; min-width: 960px;}
+#preloader img { top: 250px; left: 50%; margin-top: -32px; margin-left: -32px; position: absolute; }
+.pov sup { top: -0.1em; }
+/*=== Layout ===*/
+.main_content_full { /*background: url('../images/tracing.jpg') no-repeat -117px -144px;*/
+position: relative; overflow: hidden; height: 100%; /*min-height: 1185px;*/ min-height: 962px; width: 100%; min-width: 100%; min-width: 960px; margin: 0 auto; font-family: "Myriad Pro", Myriad, "Liberation Sans", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+/*.inner-content { display: none; overflow: hidden; }*/
+
+/*=== POV ===*/
+.pov-container { background: #f8eccf url('../images/pov-banner.jpg') repeat-x left top;  }
+    .pov { height: 581px;}
+    .pov > p { top: 460px; left: 19px; z-index: 1; width: 500px; color: #FFF; font-size: 15px; text-align: center;}
+
+    .pov .abs { position: absolute;}
+    .pov .heading { top: 16px; left: 87px; z-index: 1;}
+    .pov .casserole { top: -6px; left: 292px; z-index: 0;}
+    .pov .btn.green { top: 510px;
+        left: 195px;
+        font-size: 13px;
+        padding: 12px 20px 10px; }
+
+    .recipe-card { background: url('../images/pov/pov-card.png') no-repeat 0 0; height: 260px; width: 343px; top: 308px; left: 565px;}
+    .get-recipe, .big-batch { position: absolute; text-indent: -9999px; }
+    .get-recipe { top: 152px; left: 110px; width: 131px; height: 85px; background: url('../images/pov/cta-view-recipe.png') no-repeat 0 0;  }
+     .get-recipe:hover { background-position: 0 -90px;  }
+    .big-batch { top: 176px; left: 111px; width: 153px; height: 44px; }
+
+.hover-tip { position: absolute; top: 286px; left: 72px; z-index: 1; }
+    .product { position: absolute;}
+    .product.one { top: 302px; left: 8px; z-index: 3; }
+    .product.two { top: 281px; left: 198px; z-index: 2; }
+    .product.three { top: 238px; left: 335px; z-index: 1; }
+
+    .tip-content { overflow: hidden; z-index: 1; position: absolute;
+
+    }
+    .tip-content img { }
+    .one .tip-content { top: 229px; left: 77px; z-index: 3; }
+    .two .tip-content { top: 223px; left: 427px; z-index: 3; }
+    .three .tip-content { top: 145px; left: 108px; z-index: 3; }
+
+    .plus { background: url('../images/pov/plus-btn.png') 0 0 no-repeat; width: 34px; height: 34px; display: block; position: absolute;}
+    .plus:hover { background-position: -60px 0;}
+    .one .plus {top: 347px; left: 70px; z-index: 4; }
+    .two .plus { top: 299px; left: 413px; z-index: 4; }
+    .three .plus { top: 193px; left: 377px; z-index: 4; }
+/*=== Recipes ===*/
+.recipe-banner { text-align: center; margin: 44px auto 33px;}
+    .recipe-banner > img { margin: 0 auto; }
+.recipeTool { position: relative; /*top: -178px;*/ }
+    /* Recipe Tiles */
+    .recipes-container { margin-bottom: 33px; overflow: hidden; height: 310px; }
+    .recipe-mod { width: 843px; margin: 10px auto 0; height: 160px; }
+    .recipe-asset-item { background: url('../images/recipe-shadow.png') 0 0 no-repeat; width: 204px; height: 159px; z-index: 0; }
+    .recipe-grid-load-story { width: 100%; height: 100%; display: inline-block; position: relative; }
+    .image-wrap { height: 140px; left: 8px; opacity: 1; overflow: hidden; position: absolute; top: 8px; width: 186px; z-index: 1; }
+    .recipe-tile-wrap { overflow: hidden; position: absolute; left: 8px; top: 8px; height: 140px; width: 186px; z-index: 2; }
+    .recipe-tile { background: #90815e; background: rgba(144,129,94,0.85); height: 51px; opacity: 1; width: 156px; top: 140px; position: absolute; font-family: 'Montserrat', sans-serif; text-align: center; color: #FFF; padding: 10px 15px; }
+    .recipe-tile h3 { font-weight: normal; font-size: 13px; margin-bottom: 4px; }
+    .recipe-tile p { color: #ffd200; font-size: 12px; }
+
+    /* Flexslider */
+    .flexslider { background: none; border: none; -webkit-border-radius: none; -moz-border-radius: none; -o-border-radius: none; border-radius: none; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; box-shadow: none; margin: 0; }
+    .carousel li { margin-right: 9px; }
+    .flex-direction-nav a { background: url(../images/carousel-arrow.png) 0 0 no-repeat; width: 47px; height: 47px; margin: -23px 0 0; text-indent: 9999px; opacity: 0.7; }
+    .flex-direction-nav .flex-prev { left: -50px; }
+    .flex-direction-nav .flex-next { right: -50px; background-position: -100px 0; }
+    .flexslider:hover .flex-prev { opacity: 0.7; left: -50px; }
+    .flexslider:hover .flex-next { opacity: 0.7; right: -50px; }
+    .flex-direction-nav a:before { content: none; }
+    .flex-direction-nav a.flex-next:before { content: none; }
+    .flex-direction-nav .flex-disabled { display: none;}
+
+/*=== Countdown ===*/
+.countdown-mod { background: url('../images/countdown-banner.jpg') center top no-repeat; width: 960px; height: 160px; margin-bottom: 50px; }
+.countdown { margin: 0 auto 0 auto; padding: 0; list-style: none; overflow: hidden; top: 62px; left: 543px; position: absolute; }
+    .countdown li { font-family: arial; list-style: none; float: left; display: block; width: 71px; margin-right: 10px; font-size: 38px; text-align: center; font-weight: bold; vertical-align: baseline; line-height: 1; }
+
+
+/*=== Video ===*/
+.video-mod { position: relative; border: 7px solid #FFF; -webkit-box-shadow: 0px 5px 35px -8px rgba(0, 0, 0, 0.7); box-shadow: 0px 5px 35px -8px rgba(0, 0, 0, 0.7); margin-bottom: 48px;  }
+.bow { background: url('../images/green-bow.png') 0 0 no-repeat; width: 984px; height: 221px; bottom: -70px; left: -19px; position: absolute; }
+.bow-small { background: url('../images/bow-small.png') 0 0 no-repeat; width: 198px; height: 114px; top: -8px; left: -8px; position: absolute; }
+
+
+.sample-it { margin: 74px auto; width: 541px;}
+
+/*=== Logo ===*/
+.logo-mod { background: #9dbc40 url('../images/bottom-banner.jpg') repeat-x center top; height: 74px; padding-top: 14px; }
+.logo-mod ul { margin: 0 auto 0 auto; padding: 0; list-style: none; overflow: hidden; width: 100px; }
+.logo-mod ul li { list-style: none; float: left; margin-left: 100px; display: block; }
+.logo-mod ul li:first-child { margin-left: 0; }
+.logo-mod ul > li > * { display: block; }
+
